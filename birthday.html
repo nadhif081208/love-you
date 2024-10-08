@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f7d6e0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #ff69b4;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .cake-image {
+            width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            font-size: 1.5em;
+            color: #555;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff4081;
+        }
+
+        #surpriseMessage {
+            margin-top: 20px;
+            font-size: 2em;
+            color: #ff69b4;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday, My Honey!</h1>
+        <img src="D:/NAdhif/.vscode/img/birthdaycake.jpg.png" alt="Birthday Cake" class="cake-image">
+        <p class="message">You are the light of my life, and I am so lucky to meet you and have you. Wishing you all the happiness in the world on your special day!<br>-nadip</p>
+        <button id="surpriseBtn">Click for a surprise!</button>
+        <div id="surpriseMessage"></div>
+    </div>
+
+    <script>
+        document.getElementById("surpriseBtn").addEventListener("click", function() {
+            const message = document.getElementById("surpriseMessage");
+            message.textContent = "I love you! 💖";
+            message.style.display = "block";
+        });
+    </script>
+</body>
+</html>
